@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetCare</title>
+    <link rel="stylesheet" href="veterinar.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- POZADINA -->
+        <div class="left-side">
+
+            <div class="overlay"></div>
+
+            <!-- NAVBAR -->
+            <nav class="navbar">
+
+                <div class="logo">
+                    <h1>Vetti Group</h1>
+                </div>
+
+                <div class="nav-links">
+                    <a href="veterinar.html">Početna</a>
+                    <a href="usluge2.html">Usluge</a>
+                    <a href="kontakt2.html">Kontakt</a>
+                </div>
+
+            </nav>
+
+            <!-- CENTRALNI SADRŽAJ -->
+            <div class="content">
+                <h2>Briga za vaše ljubimce</h2>
+                <p>Zdravlje i sreća vaših životinja su naš prioritet.</p>
+
+                <button id="openBtn">Zakaži pregled</button>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer">
+                <p>© 2026 Vetti Group</p>
+            </div>
+
+        </div>
+
+        <!-- SLIDE PANEL -->
+        <div class="right-side" id="loginPanel">
+
+            <span class="close-btn" id="closeBtn">×</span>
+
+            <div class="form-box">
+                <h2>Pregled</h2>
+
+                <input type="text" placeholder="Ime">
+                <input type="email" placeholder="Email">
+
+                <button>Pošalji</button>
+            </div>
+
+        </div>
+
+    </div>
+
+<script>
+
+const openBtn = document.getElementById("openBtn");
+const closeBtn = document.getElementById("closeBtn");
+const loginPanel = document.getElementById("loginPanel");
+
+openBtn.addEventListener("click", () => {
+    loginPanel.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+    loginPanel.classList.remove("active");
+});
+
+</script>
+
+</body>
+</html>
